@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .whatsapp-float {
   position: fixed;
   width: 60px;
@@ -52,7 +53,7 @@ header nav {
   position: fixed;
   top: 0;
   left: 0;
-  
+
   z-index: 1000;
   background-color: white;
   display: flex;
@@ -61,8 +62,11 @@ header nav {
   box-shadow: 0 4px 10px rgba(80, 60, 2, 0.4);
 }
 
-.nav-left,
-.nav-right {
+.header-menu {
+  display: none;
+}
+
+.nav-left {
   display: flex;
   list-style: none;
   gap: 90px;
@@ -143,7 +147,7 @@ main img {
 .btn a:hover {
   color: white;
   background-color: rgb(178, 161, 7);
-  
+
 }
 
 .banner h1 {
@@ -181,7 +185,7 @@ p {
   text-align: center;
   font-size: large;
   color: #2f2f2f;
- 
+
 }
 
 .produto {
@@ -273,7 +277,7 @@ footer {
 .container a {
   color: #2f2f2f;
   padding: 10px;
-  
+
   font-size: 30px;
   text-decoration: none;
   align-items: center;
@@ -289,62 +293,71 @@ a:hover {
   color: #a68a64;
   text-decoration: none;
 }
+
 /*catalogo*/
 
 
-
 /*contato*/
-main{
+main {
   margin: 0;
   color: #4a4a4a;
 }
-.paragrafo{
+
+.paragrafo {
   border-bottom: 1px solid #ddd;
 }
-.paragrafo h1{
+
+.paragrafo h1 {
   font-size: 48px;
   margin-bottom: 10px;
   margin-top: 230px;
- 
+
   text-align: center;
- 
+
 }
- .paragrafo h2 {
-     font-size: 25px;
-     margin-bottom: 10px;
+
+.paragrafo h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
   color: #4a4a4a;
   text-shadow: none;
-  
-  }
-  blockquote{
-    font-style: italic;
-    color: #777;
-    margin: auto;
-    max-width: 600px;
-  }
-.btn-contato{
+
+}
+
+blockquote {
+  font-style: italic;
+  color: #777;
+  margin: auto;
+  max-width: 600px;
+}
+
+.btn-contato {
   width: 100%;
   margin-bottom: 10px;
   text-align: left;
-  
+
 }
+
 .btn-contato i {
   margin-right: 8px;
 }
+
 .contato-box {
   background: #f8f9fa;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
 }
+
 .mapa-container {
   height: 300px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 .redes a {
-   display: grid;
+  display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
   padding: 4px 0;
@@ -356,7 +369,7 @@ main{
 }
 
 .redes a:hover {
-  color: #a87c5f; 
+  color: #a87c5f;
 }
 
 .redes i {
@@ -377,15 +390,14 @@ main{
 
   .header-logo {
     margin-bottom: 10px;
-    text-align:left !important ;
+    text-align: left !important;
   }
 
-  .nav-left,
-  .nav-right {
- 
+  .nav-left {
+
     justify-content: space-between;
-    
-   text-align: right;
+
+    text-align: right;
     gap: 15px;
     margin-top: 10px;
   }
@@ -428,19 +440,21 @@ main{
   .bio-texto p {
     font-size: 1rem;
   }
-  footer p{
+
+  footer p {
     align-items: center;
     grid-template-columns: 3fr;
 
 
   }
 
-  .item img{
+  .item img {
     width: 100%;
-    border-right: none ;
+    border-right: none;
     border-bottom: 1px solid #ccc;
   }
-  .texto{
+
+  .texto {
     padding: 15;
   }
 }

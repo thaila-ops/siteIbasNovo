@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-  <link rel="stylesheet" href="../style.css/style1.css" />
+  <link rel="stylesheet" href="../style2.css/style.css" />
   <link href="/imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
@@ -30,8 +30,8 @@
     <div class="container">
       <nav>
 
-          <img src="../imagens/novo_logo.jpg" width="120px" alt="ibas">
-          
+        <img src="../imagens/novo_logo.jpg" width="120px" alt="ibas">
+
         <div class="nav-left">
           <a href="../index.php?pagina=home">Home</a>
           <a href="contato.php?pagina=contato">Contato</a>
@@ -69,104 +69,213 @@
   </div>
 
 
-  <section id="coquetel">
-    <div class="menu">
-      <div class="dish">
-        <img src="/imagens/tabua_de_frios.jpg" alt="tabua de frios">
-        <div class="descricao">
-          <h2>Mesa de Frios</h2>
-          <h2>Queijos</h2>
-          <ol>
-            <li>Parmesão</li>
-            <li>Provolone</li>
-            <li>Gouda </li>
-            <li>Nozinho</li>
-            <li>Gorgonzola</li>
-          </ol>
+  <section id="sobre" class="biografia">
+    <div class="bio-box">
+      <div class="bio-grid">
+        <div class="bio-img">
+          <img class="img-perfil" src="../imagens/Paleta_suína.jpg" height="auto" alt="paleta_suina">
+        </div>
+        <div class="bio-texto">
+          <h2>Paleta suína</h2>
+          <p>
+            Paleta suína assada e desossada, preparada com temperos especiais e recheada com uma combinação irresistível
+            de cenoura, calabresa, bacon e vagem. Assada lentamente até alcançar maciez e sabor incomparáveis, é
+            finalizada com um dourado perfeito que realça sua suculência. Acompanha farofa artesanal, tornando este
+            prato a escolha ideal para uma ceia natalina marcante e repleta de sofisticação.
+          </p>
+
         </div>
       </div>
+    </div>
+  </section>
+  <section id="sobre" class="biografia">
+    <div class="bio-box">
+      <div class="bio-grid">
+        <div class="bio-img">
+          <img class="img-perfil" src="../imagens/Camarão_na_moranga.jpg" height="auto" alt="camarãoMoranga">
+        </div>
+        <div class="bio-texto">
+          <h2>Camarão na Moranga</h2>
+          <p>
+            <strong> Camarão na Moranga com Catupiry</strong><br>
+            Um clássico da gastronomia brasileira em versão natalina: moranga assada e recheada com camarões suculentos
+            envoltos em um cremoso molho à base de Catupiry. Um prato que une sabor marcante, textura aveludada e
+            apresentação irresistível, trazendo sofisticação e aconchego à mesa de celebração.
+          </p>
 
-
-      <div class="dish">
-        <img src="/imagens/Queijo_Brie.jpg" alt="Brie">
-        <div class="descricao">
-
-          <h2>Embutidos</h2>
-          <ol>
-            <li>Salame Italiano</li>
-            <li>Lombinho Defumado</li>
-            <li>Copa</li>
-            <li>Peito de Peru Defumado</li>
-          </ol>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="dish">
-        <div class="descricao">
-          <h2>Complemento</h2>
-          <ol>
-            <li>Azeitona Verde e Preta</li>
-            <li>Ovo de Codorna</li>
-            <li>Palmito</li>
-            <li>torradas</li>
-            <li>frutas</li>
-          </ol>
-        </div>
-      </div>
 
-      <div class="dish">
-        <img src="/imagens/Coquetel.jpg" alt="Coquetel">
-        <div class="descricao">
-          <h2>Ramequuins</h2>
-          <p>(Assados)</p>
-          <ol>
-            <li>Risoto</li>
-            <li>Batata Recheada</li>
-            <li>Escondidinho de Carne Seca</li>
-            <li>Penne</li>
+  <section id="sobre" class="biografia">
+    <div class="bio-box">
+      <div class="bio-grid">
+        <div class="bio-img">
+          <img class="img-perfil" src="../imagens/Rondelli.PNG" height="auto" alt="rondeli">
+        </div>
+        <div class="bio-texto">
+          <h2>rondeli</h2>
 
-          </ol>
+          <p>
+            <strong> Rondeli de Presunto e Queijo ao Sugo</strong><br>
+            Massa fresca cuidadosamente enrolada e recheada com presunto fatiado e queijo derretido, servida ao forno
+            com um delicado molho ao sugo caseiro. Uma combinação clássica e irresistível que traz aconchego, sabor e a
+            tradição das festas natalinas à sua mesa.
+          </p>
+
         </div>
       </div>
-      <div class="dish">
-        <img src="/imagens/Lanche_natural.jpg" style="float: right; margin-left: 1rem;" alt="Coquetel">
-        <div class="descricao">
-          <h2>Finger Foods</h2>
-          <ol>
-            <li>Mini Quiche</li>
-            <li>Canapés de Pepino Quente</li>
-            <li>Canapés de Figo e Cream Cheease</li>
-            <li>Espetinhos de Frios</li>
-            <li>Espetinhos de Frango</li>
-            <li>Espetinhos de Peito de Peru a California</li>
-            <li>Pardúlas</li>
-            <li>Baguetes com Tomate e Parmesão</li>
-            <li>Tabletes Finas de Alho Poró</li>
-            <li>Pastel Assado de Lombo e Ameixa </li>
-            <li>Pastel Assado de Ricota e Tomate Seco </li>
-            <li>Pastel Assado de Chester com Abacaxi</li>
-            <li>Massa Wrap: Rúcula, Tomate Seco e Ricota</li>
-            <li>Baquetes: Peito de Peru, Gorgonzola e Frango</li>
-            <li>Empadinhas: Frango, Palmito, Bacalhau e Carne Seca</li>
-            <li>Croquete de Bacalhau</li>
-            <li>Empadão: Alho Poró, Frango, Palmito e Aspargos</li>
-          </ol>
+    </div>
+  </section>
+
+
+
+  <section id="sobre" class="biografia">
+    <div class="bio-box">
+      <div class="bio-grid">
+        <div class="bio-img">
+          <img class="img-perfil" src="../imagens/Lasanha.PNG" height="auto" alt="lasanha">
+        </div>
+        <div class="bio-texto">
+          <h2>Lasanha à Bolonhesa</h2>
+          <p>
+            <strong>Lasanha à Bolonhesa</strong><br>
+            Camadas de massa artesanal intercaladas com um rico e encorpado molho bolonhesa, preparado com carne
+            selecionada e tomates frescos, envoltas por um delicado creme de queijo gratinado ao forno. Um clássico
+            atemporal que une tradição, sabor e elegância, perfeito para celebrar o espírito natalino em grande estilo.
+          </p>
+
         </div>
       </div>
-      <div class="dish">
-        <img src="/imagens/Quiche.jpg" alt="Coquetel">
-        <div class="descricao">
-          <h2>Salgados Fritos e Assados </h2>
-          <ol>
-            <li>Pastel de Vento</li>
-            <li>Coxinhas</li>
-            <li>Quibe</li>
-            <li>Risoles</li>
-            <li>Empadinhas</li>
-            <li>Esfiha</li>
-          </ol>
+    </div>
+  </section>
+
+  <section id="sobre" class="biografia">
+    <div class="bio-box">
+      <div class="bio-grid">
+        <div class="bio-img">
+          <img class="img-perfil" src="../imagens/Salada_cozida.jpg" height="auto" alt="salada_cozida">
+        </div>
+        <div class="bio-texto">
+          <h2>Legumes no Vapor</h2>
+          <p>
+
+            Uma combinação leve e colorida de cenoura, brócolis e couve-flor preparados no vapor, preservando sua
+            textura delicada e sabor natural. Acompanha um molho especial exclusivo, que realça a frescura dos legumes e
+            traz um toque refinado à sua ceia de Natal.
+          </p>
+
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="biografia">
+    <div class="bio-box">
+      <div class="bio-grid">
+        <div class="bio-img">
+          <img class="img-perfil" src="../imagens/Salada_folhas.jpg" height="auto" alt="saladaFolhas">
+        </div>
+        <div class="bio-texto">
+          <h2>Salada Verde</h2>
+          <p>
+            <strong>Mix de Folhas Frescas</strong> <br>
+            Seleção especial de folhas verdes crocantes e aromáticas, que harmonizam leveza e frescor em cada garfada.
+            Servida com um molho delicado, é a entrada perfeita para equilibrar os sabores e trazer elegância à sua
+            celebração de Natal.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="sobre" class="biografia">
+    <div class="bio-box">
+      <div class="bio-grid">
+        <div class="bio-img">
+          <img class="img-perfil" src="../imagens/Sobremesa_de_morango.jpg" height="auto" alt="SobremesaDeMorango">
+        </div>
+        <div class="bio-texto">
+          <h2>Merengue de morango</h2>
+          <p>
+           <strong> Taça de Merengue de Morango com Suspiros</strong>
+            Camadas suaves de chantilly e creme delicado se entrelaçam à doçura fresca dos morangos, finalizadas com
+            suspiros crocantes que parecem derreter na boca. Uma sobremesa que combina leveza e encanto, trazendo à ceia
+            natalina a sensação de celebrar a vida em cada colherada.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="biografia">
+    <div class="bio-box">
+      <div class="bio-grid">
+        <div class="bio-img">
+          <img class="img-perfil" src="../imagens/Damasco .jpg" height="auto" alt="paleta_suina">
+        </div>
+        <div class="bio-texto">
+          <h2>Paleta suína</h2>
+          <p>
+            Paleta suína assada e desossada, preparada com temperos especiais e recheada com uma combinação irresistível
+            de cenoura, calabresa, bacon e vagem. Assada lentamente até alcançar maciez e sabor incomparáveis, é
+            finalizada com um dourado perfeito que realça sua suculência. Acompanha farofa artesanal, tornando este
+            prato a escolha ideal para uma ceia natalina marcante e repleta de sofisticação.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="biografia">
+    <div class="bio-box">
+      <div class="bio-grid">
+        <div class="bio-img">
+          <img class="img-perfil" src="../imagens/Paleta_suína.jpg" height="auto" alt="paleta_suina">
+        </div>
+        <div class="bio-texto">
+          <h2>Paleta suína</h2>
+          <p>
+            Paleta suína assada e desossada, preparada com temperos especiais e recheada com uma combinação irresistível
+            de cenoura, calabresa, bacon e vagem. Assada lentamente até alcançar maciez e sabor incomparáveis, é
+            finalizada com um dourado perfeito que realça sua suculência. Acompanha farofa artesanal, tornando este
+            prato a escolha ideal para uma ceia natalina marcante e repleta de sofisticação.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  e Chester com Abacaxi</li>
+  <li>Massa Wrap: Rúcula, Tomate Seco e Ricota</li>
+  <li>Baquetes: Peito de Peru, Gorgonzola e Frango</li>
+  <li>Empadinhas: Frango, Palmito, Bacalhau e Carne Seca</li>
+  <li>Croquete de Bacalhau</li>
+  <li>Empadão: Alho Poró, Frango, Palmito e Aspargos</li>
+  </ol>
+  </div>
+  </div>
+  <div class="dish">
+    <img src="/imagens/Quiche.jpg" alt="Coquetel">
+    <div class="descricao">
+      <h2>Salgados Fritos e Assados </h2>
+      <ol>
+        <li>Pastel de Vento</li>
+        <li>Coxinhas</li>
+        <li>Quibe</li>
+        <li>Risoles</li>
+        <li>Empadinhas</li>
+        <li>Esfiha</li>
+      </ol>
+    </div>
+  </div>
   </section>
 
   <section id="doce">
@@ -382,14 +491,13 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-  crossorigin="anonymous"></script>
+  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     const filterBtns = document.querySelectorAll('.filter-btn');
 
     filterBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
+      btn.addEventListener('click', function () {
         // Remove active class from all buttons
         filterBtns.forEach(btn => btn.classList.remove('active'));
 

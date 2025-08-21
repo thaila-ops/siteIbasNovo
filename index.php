@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -16,34 +15,32 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-yHfM4D5xYcHc8MIhBhHtL9BRDOoN0uRM3kskmvwlLoAhDQ/IuCB6v0IZI1iUvXkYOiMd9Rvi9BkD+fS2gk0PRA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-yHfM4D5xYcHc8MIhBhHtL9BRDOoN0uRM3kskmvwlLoAhDQ/IuCB6v0IZI1iUvXkYOiMd9Rvi9BkD+fS2gk0PRA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="style2.css/style.css">
   <link href="imagens/Logo.png.jpg" rel="shortcut icon">
- 
+
 </head>
 
 
 <body>
-  <a href="https://wa.me/5544999212043" class="whatsapp-float" style=" background-color: greenyellow" target="_blank" title="Fale conosco no WhatsApp">
-  <i class="fab fa-whatsapp me-1"></i>
-</a>
+  <a href="https://wa.me/5544999212043" class="whatsapp-float" style=" background-color: greenyellow" target="_blank"
+    title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp me-1"></i>
+  </a>
   <header>
+
+
 
     <div class="container">
       <nav>
-
           <img src="imagens/novo_logo.jpg" width="120px" alt="ibas">
-
-        <div class="nav-left">
-          <a href="index.php?pagina=home">Home</a>
+    
+      <div class="nav-left">
+         <a href="index.php?pagina=home">Home</a>
           <a href="paginas/contato.php?pagina=contato">Contato</a>
-        </div>
-
-
-        <div class="nav-right">
           <a href="paginas/menuNatal.php?pagina=menuNatal">Menu de Natal</a>
           <a href="paginas/catalogo.php?pagina=catalogo">Catálogo</a>
         </div>
@@ -51,15 +48,14 @@
     </div>
   </header>
   <main>
-   <?php
+    <?php
     //recuperar a variavel
     $pagina = $_GET["pagina"] ?? "home";
     $pagina = "paginas/{$pagina}.php";
     //se a pagina existe
-    if (file_exists($pagina)){
+    if (file_exists($pagina)) {
       include $pagina;
-    }
-    else {
+    } else {
       include "paginas/404.php";
     }
     ?>
@@ -68,22 +64,22 @@
 
 
 
-<div class="position-fixed" style="top: 190px; right: 20px; z-index: 9999; background-color: #a87c5f;">
-  <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header bg-light">
-      <strong class="me-auto">Iba’s Buffet 💛</strong>
-      <small>Agora mesmo</small>
-      <button type="button" class="btn-close " data-bs-dismiss="toast" aria-label="Fechar"></button>
-    </div>
-    <div class="toast-body">
-      Que bom ter você por aqui! ✨<br>
-      Considere nos seguir lá no <strong>Instagram</strong>:<br>
-      <a href="https://www.instagram.com/ibasbuffet" class="text-decoration-none" target="_blank">
-        <i class="fab fa-instagram me-1 text-danger"></i> @ibasbuffet
-      </a>
+  <div class="position-fixed" style="top: 190px; right: 20px; z-index: 9999; background-color: #a87c5f;">
+    <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header bg-light">
+        <strong class="me-auto">Iba’s Buffet 💛</strong>
+        <small>Agora mesmo</small>
+        <button type="button" class="btn-close " data-bs-dismiss="toast" aria-label="Fechar"></button>
+      </div>
+      <div class="toast-body">
+        Que bom ter você por aqui! ✨<br>
+        Considere nos seguir lá no <strong>Instagram</strong>:<br>
+        <a href="https://www.instagram.com/ibasbuffet" class="text-decoration-none" target="_blank">
+          <i class="fab fa-instagram me-1 text-danger"></i> @ibasbuffet
+        </a>
+      </div>
     </div>
   </div>
-</div>
 
 
 
@@ -113,16 +109,17 @@
   <main>
     <h2>Sobre nós</h2>
     <div class="texto">
-    <p><strong>No Iba’s Buffet</strong>, acreditamos que experiências gastronômicas marcantes podem — e devem —
-      acontecer no aconchego do
-      seu lar. Nossa proposta vai além de servir pratos refinados: queremos transformar momentos simples em celebrações
-      memoráveis.
+      <p><strong>No Iba’s Buffet</strong>, acreditamos que experiências gastronômicas marcantes podem — e devem —
+        acontecer no aconchego do
+        seu lar. Nossa proposta vai além de servir pratos refinados: queremos transformar momentos simples em
+        celebrações
+        memoráveis.
 
-      Com um toque de sofisticação e cuidado em cada detalhe, levamos até você a alta gastronomia em um formato
-      intimista, personalizado e acolhedor. Da seleção dos ingredientes ao atendimento dedicado, tudo é pensado para
-      proporcionar uma vivência única, onde o sabor encontra o carinho de um ambiente familiar.
+        Com um toque de sofisticação e cuidado em cada detalhe, levamos até você a alta gastronomia em um formato
+        intimista, personalizado e acolhedor. Da seleção dos ingredientes ao atendimento dedicado, tudo é pensado para
+        proporcionar uma vivência única, onde o sabor encontra o carinho de um ambiente familiar.
 
-      Cozinhamos com alma, servimos com amor — porque para nós, estar em casa nunca foi tão especial.</p>
+        Cozinhamos com alma, servimos com amor — porque para nós, estar em casa nunca foi tão especial.</p>
     </div>
     <br>
     <hr>
@@ -150,12 +147,12 @@
     </section>
   </main>
 
- 
+
   <section id="sobre" class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
-        <img class= "img-perfil" src="imagens/Claudia.jpg" height="auto" alt="claudia viana iba">
+          <img class="img-perfil" src="imagens/Claudia.jpg" height="auto" alt="claudia viana iba">
         </div>
         <div class="bio-texto">
           <h2>Claudia viana Iba</h2>
@@ -171,7 +168,7 @@
   </section>
   <footer class="footer">
     <div class="container">
-     
+
       <p>
         "Realizando as promessas de Deus". <br>
         (Hebreus 10:36)
@@ -185,8 +182,9 @@
           title="Instagram">
           <i class="fab fa-instagram"></i>
         </a>
-         <a href="mailto:ibasbuffet@outlook.com?subject=contato pelo site&Olá, gostaria de mais informações." target="_blank" >
-          <i class="fas fa-envelope me-1"></i> 
+        <a href="mailto:ibasbuffet@outlook.com?subject=contato pelo site&Olá, gostaria de mais informações."
+          target="_blank">
+          <i class="fas fa-envelope me-1"></i>
         </a>
       </p>
     </div>
@@ -198,10 +196,16 @@
   document.addEventListener("DOMContentLoaded", function () {
     var toastEl = document.getElementById('liveToast');
     var toast = new bootstrap.Toast(toastEl, {
-      delay: 100000 
+      delay: 100000
     });
     toast.show();
   });
+</script>
+<script>
+  function mostrarMenu() {
+    //document.querySelector(".header-menu")
+    $(".nav-left").toggle();
+  }
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
