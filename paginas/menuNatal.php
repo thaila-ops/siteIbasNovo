@@ -47,29 +47,30 @@
       </nav>
     </div>
   </header>
+  
 
   <div class="text-center my-5" style="margin-top: 5rem !important;">
     <h1 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">
-      Sabores Abençoados para Momentos de Gratidão
+     Que tal celebrar este dia único com sabor e afeto? Reserve seu prato e deixe o Natal ainda mais memorável.
     </h1>
     <p class="lead fst-italic mt-3" style="font-family: 'Playfair Display', serif; font-size: 1.25rem;">
-      “Porque tudo o que Deus criou é bom, e nada deve ser rejeitado, desde que recebido com ação de graças.”
+      “Que tal celebrar este dia único com sabor e afeto? Reserve seu prato e deixe o Natal ainda mais memorável.”
     </p>
     <p class="text-muted" style="font-family: 'Playfair Display', serif;">
-      — 1 Timóteo 4:4
+      — Lucas 2:14
     </p>
   </div>
 
   <div class="container-filter text-center my-4">
     <button class="filter-btn active" data-filter="all">Todos</button>
-    <button class="filter-btn" data-filter="coquetel">Coquetel</button>
-    <button class="filter-btn" data-filter="doce">Doces</button>
-    <button class="filter-btn" data-filter="jantar">Jantares</button>
-    <button class="filter-btn" data-filter="arabe">Árabe</button>
+    <button class="filter-btn" data-filter="carnes">Carnes</button>
+    <button class="filter-btn" data-filter="massas">Massas</button>
+    <button class="filter-btn" data-filter="salada">Saladas</button>
+    <button class="filter-btn" data-filter="sobremesa">Sobremesas</button>
   </div>
 
 
-  <section id="sobre" class="biografia">
+  <section id="carnes" class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
@@ -88,7 +89,7 @@
       </div>
     </div>
   </section>
-  <section id="sobre" class="biografia">
+  <section class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
@@ -109,7 +110,7 @@
   </section>
 
 
-  <section id="sobre" class="biografia">
+  <section id="massas" class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
@@ -132,7 +133,7 @@
 
 
 
-  <section id="sobre" class="biografia">
+  <section class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
@@ -152,7 +153,7 @@
     </div>
   </section>
 
-  <section id="sobre" class="biografia">
+  <section id="salada" class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
@@ -172,7 +173,7 @@
     </div>
   </section>
 
-  <section id="sobre" class="biografia">
+  <section class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
@@ -193,7 +194,7 @@
   </section>
 
 
-  <section id="sobre" class="biografia">
+  <section id="sobremesa" class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
@@ -202,7 +203,7 @@
         <div class="bio-texto">
           <h2>Merengue de morango</h2>
           <p>
-           <strong> Taça de Merengue de Morango com Suspiros</strong>
+            <strong> Taça de Merengue de Morango com Suspiros</strong>
             Camadas suaves de chantilly e creme delicado se entrelaçam à doçura fresca dos morangos, finalizadas com
             suspiros crocantes que parecem derreter na boca. Uma sobremesa que combina leveza e encanto, trazendo à ceia
             natalina a sensação de celebrar a vida em cada colherada.
@@ -213,19 +214,17 @@
     </div>
   </section>
 
-  <section id="sobre" class="biografia">
+  <section class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
           <img class="img-perfil" src="../imagens/Damasco .jpg" height="auto" alt="paleta_suina">
         </div>
         <div class="bio-texto">
-          <h2>Paleta suína</h2>
+          <h2>Torta de Damasco</h2>
           <p>
-            Paleta suína assada e desossada, preparada com temperos especiais e recheada com uma combinação irresistível
-            de cenoura, calabresa, bacon e vagem. Assada lentamente até alcançar maciez e sabor incomparáveis, é
-            finalizada com um dourado perfeito que realça sua suculência. Acompanha farofa artesanal, tornando este
-            prato a escolha ideal para uma ceia natalina marcante e repleta de sofisticação.
+            "Nossa torta de geleia de damasco é um abraço em forma de doce: massa macia, recheio delicadamente adocicado
+            e um sabor que derrete na boca, perfeito para qualquer momento do dia."
           </p>
 
         </div>
@@ -233,235 +232,8 @@
     </div>
   </section>
 
-  <section id="sobre" class="biografia">
-    <div class="bio-box">
-      <div class="bio-grid">
-        <div class="bio-img">
-          <img class="img-perfil" src="../imagens/Paleta_suína.jpg" height="auto" alt="paleta_suina">
-        </div>
-        <div class="bio-texto">
-          <h2>Paleta suína</h2>
-          <p>
-            Paleta suína assada e desossada, preparada com temperos especiais e recheada com uma combinação irresistível
-            de cenoura, calabresa, bacon e vagem. Assada lentamente até alcançar maciez e sabor incomparáveis, é
-            finalizada com um dourado perfeito que realça sua suculência. Acompanha farofa artesanal, tornando este
-            prato a escolha ideal para uma ceia natalina marcante e repleta de sofisticação.
-          </p>
 
-        </div>
-      </div>
-    </div>
-  </section>
 
-  e Chester com Abacaxi</li>
-  <li>Massa Wrap: Rúcula, Tomate Seco e Ricota</li>
-  <li>Baquetes: Peito de Peru, Gorgonzola e Frango</li>
-  <li>Empadinhas: Frango, Palmito, Bacalhau e Carne Seca</li>
-  <li>Croquete de Bacalhau</li>
-  <li>Empadão: Alho Poró, Frango, Palmito e Aspargos</li>
-  </ol>
-  </div>
-  </div>
-  <div class="dish">
-    <img src="/imagens/Quiche.jpg" alt="Coquetel">
-    <div class="descricao">
-      <h2>Salgados Fritos e Assados </h2>
-      <ol>
-        <li>Pastel de Vento</li>
-        <li>Coxinhas</li>
-        <li>Quibe</li>
-        <li>Risoles</li>
-        <li>Empadinhas</li>
-        <li>Esfiha</li>
-      </ol>
-    </div>
-  </div>
-  </section>
-
-  <section id="doce">
-    <div class="menu">
-      <div class="dish">
-        <img src="/imagens/Sobremesa_de_morango.jpg" alt="Doce 1">
-        <div class="descricao">
-          <h2>Tortas Doce</h2>
-          <p>De Acordo com a sugestão da cliente</p>
-          <ol>
-            <li>Torta de Morango</li>
-            <li>Torta de Damasco</li>
-            <li>Torta Dois Amores</li>
-            <li>Marta Rocha</li>
-            <li>Torta de Abacaxi</li>
-            <li>Strogonoff de Nozes</li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="dish">
-        <img src="/imagens/IMG_0108.jpg" alt="Doce 2">
-        <div class="descricao">
-          <h2>Doces Finos</h2>
-          <p>De acordo com a sugestão do cliente</p>
-          <ol>
-            <li>Mini Banoffe</li>
-            <li>brigadeiro</li>
-            <li>Beijinho</li>
-            <li>Dois Amores</li>
-            <li>Bolo de Pote</li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="dish">
-        <img src="/imagens/Bolo_caseiro.jpg" alt="Doce 3">
-        <div class="descricao">
-          <h2>Bolos Caseiros</h2>
-          <p>Para chás e coffe</p>
-          <ol>
-            <li>Bolo mesclados</li>
-            <li>Bolo de Limão</li>
-            <li>Bolo de Laranja</li>
-            <li>Bolo de Coco</li>
-            <li>Bolo de Chocolate</li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="dish">
-        <img src="/imagens/Pão_de_mel.jpg" alt="Doce 4">
-        <div class="descricao">
-          <h2>presente</h2>
-          <p>De acordo com a necessidade do cliente</p>
-          <ol>
-            <li>Pão de Mel</li>
-            <li>Bolos de pote</li>
-            <li>CupCake</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="jantar">
-    <div class="menu">
-      <div class="dish">
-        <img src="/imagens/jantar.jpeg" alt="jantar 1">
-        <div class="descricao">
-          <h2>Jantar Tradicional</h2>
-          <p>De acordo com a necessidade do cliente, estamos sujeitas a mudanças no cardápio</p>
-          <ol>
-            <li>3 Tipos de Salada</li>
-            <li>Arroz Branco </li>
-            <li>Arroz Temperado</li>
-            <li>1 Massa</li>
-            <li>2 Carnes</li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="dish">
-        <img src="/imagens/Paleta_suína.jpg" alt="jantar 2">
-        <div class="descricao">
-          <h2>Carnes</h2>
-          <p>Assadas e grelhadas</p>
-          <li>Posta ao MOlho Madeira</li>
-          <li>Paleta Súina Recheada</li>
-          <li>Medalhão de frango</li>
-          <li>Filé Mignon</li>
-          <li>Cordeiro ao vinho</li>
-          <li>Chester a Califórnia</li>
-          <li>Camarão na Moranga</li>
-          <li>Frango grelhado</li>
-          <li>File de Salmão</li>
-          <li>Frango Assado Desossado e Recheado</li>
-        </div>
-      </div>
-
-      <div class="dish">
-        <img src="/imagens/IMG_0240.jpg" alt="jantar 3">
-        <div class="descricao">
-          <h2>Acompanhamentos</h2>
-          <li>fricassê </li>
-          <li>Rondelle</li>
-          <li>Lasanha</li>
-          <li>Nhoque</li>
-          <li>Risotos</li>
-          <li>Canelone</li>
-          <li>Penne</li>
-          <li>Escondidinhos</li>
-
-        </div>
-      </div>
-
-      <div class="dish">
-        <img src="/imagens/Bacalhau.jpg" alt="jantar 4">
-
-        <div class="descricao">
-          <h2>Saladas e Entradas</h2>
-          <p>De acordo com a necessidade do cliente</p>
-          <li>Mix de Folhas</li>
-          <li>Ceasar</li>
-          <li>Waldorf</li>
-          <li>Caprese</li>
-          <li>Legumes Cozidos</li>
-          <h2>Para entradas </h2>
-          <li>Canapês</li>
-          <li>Parte Árabe</li>
-
-        </div>
-      </div>
-
-  </section>
-
-  <section id="arabe">
-
-    <div class="menu">
-      <div class="dish">
-        <img src="/imagens/IMG_0876.jpg" alt="arabe 1">
-        <div class="descricao">
-          <h2>Pastas</h2>
-          <p>Acompanha Pão sirio</p>
-          <li>Coalhada Seca Síria </li>
-          <li>Babaganush</li>
-          <li>Homus</li>
-        </div>
-      </div>
-
-      <div class="dish">
-        <img src="/imagens/Quibe.jpg" alt="arabe 2">
-        <div class="descricao">
-          <h2>Saladas</h2>
-          <p>De acordo com a necessidade do cliente</p>
-          <li>Escabeche de Berinjela</li>
-          <li>Tabule</li>
-          <li>Fatuche</li>
-          <li>Salada Árabe</li>
-        </div>
-      </div>
-
-      <div class="dish">
-        <img src="/imagens/Parte_árabe.jpg" alt="Doce 3">
-        <div class="descricao">
-          <h2>ATAIF</h2>
-          <li>Shishbarak</li>
-          <li>Arroz Sultana: Castanha, Figo e Tâmaras</li>
-          <li>Mjadra (Arroz com lentilha)</li>
-          <li>Charutos</li>
-          <li>Abobrinhas Recheadas</li>
-          <li>Molho de Hotelã</li>
-        </div>
-      </div>
-
-      <div class="dish">
-        <img src="/imagens/Quibe_no_palito.jpg" alt="Doce 4">
-        <div class="descricao">
-          <h2>Carnes</h2>
-          <li>Kafta no Espeto</li>
-          <li>Quibe Assado, Quibe Cru, Quibe Frito</li>
-          <li>Pernil de Carneiro</li>
-
-        </div>
-      </div>
-    </div>
-  </section>
 
 
   <footer class="footer">
