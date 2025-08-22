@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="../style2.css/style.css" />
-  <link rel="shortcut icon" href="/imagens/Logo.png.jpg" />
+  <link rel="shortcut icon" href="../imagens/Logo.png.jpg" />
 </head>
 <base href="<? $_base ?>">
 

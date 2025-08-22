@@ -20,7 +20,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="style2.css/style.css">
-  <link href="imagens/Logo.png.jpg" rel="shortcut icon">
+  <link href="../imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
 

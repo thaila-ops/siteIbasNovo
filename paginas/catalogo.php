@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-  <link rel="stylesheet" href="../style2.css/style.css" />
-  <link href="/imagens/Logo.png.jpg" rel="shortcut icon">
+  <link rel="stylesheet" href="../style.css/style.css"/>
+  <link href="../imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
 <a href="https://wa.me/5544999212043" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
@@ -69,7 +69,7 @@
   <section id="coquetel">
     <div class="menu">
       <div class="dish">
-        <img src="/imagens/tabua_de_frios.jpg" alt="tabua de frios">
+        <img src="../imagens/tabua_de_frios.jpg" alt="tabua de frios">
         <div class="descricao">
           <h2>Mesa de Frios</h2>
           <h2>Queijos</h2>
@@ -85,7 +85,7 @@
 
 
       <div class="dish">
-        <img src="/imagens/Queijo_Brie.jpg" alt="Brie">
+        <img src="../imagens/Queijo_Brie.jpg" alt="Brie">
         <div class="descricao">
 
           <h2>Embutidos</h2>
@@ -112,7 +112,7 @@
       </div>
 
       <div class="dish">
-        <img src="/imagens/Coquetel.jpg" alt="Coquetel">
+        <img src="../imagens/Coquetel.jpg" alt="Coquetel">
         <div class="descricao">
           <h2>Ramequuins</h2>
           <p>(Assados)</p>
@@ -126,7 +126,7 @@
         </div>
       </div>
       <div class="dish">
-        <img src="/imagens/Lanche_natural.jpg" style="float: right; margin-left: 1rem;" alt="Coquetel">
+        <img src="../imagens/Lanche_natural.jpg" style="float: right; margin-left: 1rem;" alt="Coquetel">
         <div class="descricao">
           <h2>Finger Foods</h2>
           <ol>
@@ -151,7 +151,7 @@
         </div>
       </div>
       <div class="dish">
-        <img src="/imagens/Quiche.jpg" alt="Coquetel">
+        <img src="../imagens/Quiche.jpg" alt="Coquetel">
         <div class="descricao">
           <h2>Salgados Fritos e Assados </h2>
           <ol>
@@ -169,7 +169,7 @@
   <section id="doce">
     <div class="menu">
       <div class="dish">
-        <img src="/imagens/Sobremesa_de_morango.jpg" alt="Doce 1">
+        <img src="../imagens/Sobremesa_de_morango.jpg" alt="Doce 1">
         <div class="descricao">
           <h2>Tortas Doce</h2>
           <p>De Acordo com a sugestão da cliente</p>
@@ -185,7 +185,7 @@
       </div>
 
       <div class="dish">
-        <img src="/imagens/IMG_0108.jpg" alt="Doce 2">
+        <img src="../imagens/IMG_0108.jpg" alt="Doce 2">
         <div class="descricao">
           <h2>Doces Finos</h2>
           <p>De acordo com a sugestão do cliente</p>
@@ -200,7 +200,7 @@
       </div>
 
       <div class="dish">
-        <img src="/imagens/Bolo_caseiro.jpg" alt="Doce 3">
+        <img src="../imagens/Bolo_caseiro.jpg" alt="Doce 3">
         <div class="descricao">
           <h2>Bolos Caseiros</h2>
           <p>Para chás e coffe</p>
@@ -215,7 +215,7 @@
       </div>
 
       <div class="dish">
-        <img src="/imagens/Pão_de_mel.jpg" alt="Doce 4">
+        <img src="../imagens/Pão_de_mel.jpg" alt="Doce 4">
         <div class="descricao">
           <h2>presente</h2>
           <p>De acordo com a necessidade do cliente</p>
@@ -231,7 +231,7 @@
   <section id="jantar">
     <div class="menu">
       <div class="dish">
-        <img src="/imagens/jantar.jpeg" alt="jantar 1">
+        <img src="../imagens/jantar.jpeg" alt="jantar 1">
         <div class="descricao">
           <h2>Jantar Tradicional</h2>
           <p>De acordo com a necessidade do cliente, estamos sujeitas a mudanças no cardápio</p>
@@ -246,7 +246,7 @@
       </div>
 
       <div class="dish">
-        <img src="/imagens/Paleta_suína.jpg" alt="jantar 2">
+        <img src="../imagens/Paleta_suína.jpg" alt="jantar 2">
         <div class="descricao">
           <h2>Carnes</h2>
           <p>Assadas e grelhadas</p>
@@ -264,7 +264,7 @@
       </div>
 
       <div class="dish">
-        <img src="/imagens/IMG_0240.jpg" alt="jantar 3">
+        <img src="../imagens/IMG_0240.jpg" alt="jantar 3">
         <div class="descricao">
           <h2>Acompanhamentos</h2>
           <li>fricassê </li>
@@ -280,7 +280,7 @@
       </div>
 
       <div class="dish">
-        <img src="/imagens/Bacalhau.jpg" alt="jantar 4">
+        <img src="../imagens/Bacalhau.jpg" alt="jantar 4">
 
         <div class="descricao">
           <h2>Saladas e Entradas</h2>
@@ -303,7 +303,7 @@
 
     <div class="menu">
       <div class="dish">
-        <img src="/imagens/IMG_0876.jpg" alt="arabe 1">
+        <img src="../imagens/IMG_0876.jpg" alt="arabe 1">
         <div class="descricao">
           <h2>Pastas</h2>
           <p>Acompanha Pão sirio</p>
@@ -314,7 +314,7 @@
       </div>
 
       <div class="dish">
-        <img src="/imagens/Quibe.jpg" alt="arabe 2">
+        <img src="../imagens/Quibe.jpg" alt="arabe 2">
         <div class="descricao">
           <h2>Saladas</h2>
           <p>De acordo com a necessidade do cliente</p>
@@ -326,7 +326,7 @@
       </div>
 
       <div class="dish">
-        <img src="/imagens/Parte_árabe.jpg" alt="Doce 3">
+        <img src="../imagens/Parte_árabe.jpg" alt="Doce 3">
         <div class="descricao">
           <h2>ATAIF</h2>
           <li>Shishbarak</li>
@@ -339,7 +339,7 @@
       </div>
 
       <div class="dish">
-        <img src="/imagens/Quibe_no_palito.jpg" alt="Doce 4">
+        <img src="../imagens/Quibe_no_palito.jpg" alt="Doce 4">
         <div class="descricao">
           <h2>Carnes</h2>
           <li>Kafta no Espeto</li>

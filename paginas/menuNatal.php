@@ -17,7 +17,7 @@
 
 
   <link rel="stylesheet" href="../style2.css/style.css" />
-  <link href="/imagens/Logo.png.jpg" rel="shortcut icon">
+  <link href="../imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
 <a href="https://wa.me/5544999212043" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
@@ -89,7 +89,7 @@
       </div>
     </div>
   </section>
-  <section class="biografia">
+  <section id="carnes" class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
@@ -133,7 +133,7 @@
 
 
 
-  <section class="biografia">
+  <section id="massas" class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
@@ -173,7 +173,7 @@
     </div>
   </section>
 
-  <section class="biografia">
+  <section id= "salada" class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
@@ -214,7 +214,7 @@
     </div>
   </section>
 
-  <section class="biografia">
+  <section id="sobremesa" class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
