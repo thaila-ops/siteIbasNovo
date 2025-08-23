@@ -32,27 +32,6 @@
 }
 
 
-.container-filter {
-  margin: 30px 0;
-}
-
-.filter-btn {
-  background: #f9f6f2;
-  border: 1px solid #a68a64;
-  color: #4b3621;
-  padding: 8px 20px;
-  margin: 0 5px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'Playfair Display', serif;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-  background: #a68a64;
-  color: white;
-}
 
 
 
@@ -110,6 +89,20 @@ nav a:hover {
   color: #a68a64;
   text-decoration: none;
 }
+.login {
+
+  color: #4a4a4a;
+  padding: 16px;
+
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: rgb(178, 161, 7);
+}
+
 
 main img {
   width: 100%;
@@ -253,7 +246,7 @@ hr {
 }
 
 .bio-grid {
-  display: grid;
+  display: contents;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   align-items: center;
@@ -405,13 +398,13 @@ blockquote {
   header nav {
     flex-direction: column;
     align-items: center;
-    padding: 15px 20px !important;
+    padding: auto !important;
     position: sticky;
   }
 
   .header-logo {
     margin-bottom: 10px;
-    text-align: left !important;
+ 
   }
 
   .nav-left {

@@ -36,159 +36,162 @@
 
     <div class="container">
       <nav>
-          <img src="imagens/novo_logo.jpg" width="120px" alt="ibas">
-    
-      <div class="nav-left">
-         <a href="index.php?pagina=home">Home</a>
+        <img src="imagens/novo_logo.jpg" width= "120px" alt="ibas">
+
+        <div class="nav-left">
+          <a href="index.php?pagina=home">Home</a>
           <a href="paginas/contato.php?pagina=contato">Contato</a>
           <a href="paginas/menuNatal.php?pagina=menuNatal">Menu de Natal</a>
           <a href="paginas/catalogo.php?pagina=catalogo">Catálogo</a>
+          <a href="paginas/login.php?pagina=login" class="login">
+            <i class="fas fa-user-circle"></i> Login  </a>
         </div>
       </nav>
-    </div>
-  </header>
-  <main>
-    <?php
-    //recuperar a variavel
-    $pagina = $_GET["pagina"] ?? "home";
-    $pagina = "paginas/{$pagina}.php";
-    //se a pagina existe
-    if (file_exists($pagina)) {
-      include $pagina;
-    } else {
-      include "paginas/404.php";
-    }
-    ?>
 
-  </main>
+      <main>
+        <?php
+        //recuperar a variavel
+        $pagina = $_GET["pagina"] ?? "home";
+        $pagina = "paginas/{$pagina}.php";
+        //se a pagina existe
+        if (file_exists($pagina)) {
+          include $pagina;
+        } else {
+          include "paginas/404.php";
+        }
+        ?>
 
-
-
-  <div class="position-fixed" style="top: 190px; right: 20px; z-index: 9999; background-color: #a87c5f;">
-    <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header bg-light">
-        <strong class="me-auto">Iba’s Buffet 💛</strong>
-        <small>Agora mesmo</small>
-        <button type="button" class="btn-close " data-bs-dismiss="toast" aria-label="Fechar"></button>
-      </div>
-      <div class="toast-body">
-        Que bom ter você por aqui! ✨<br>
-        Considere nos seguir lá no <strong>Instagram</strong>:<br>
-        <a href="https://www.instagram.com/ibasbuffet" class="text-decoration-none" target="_blank">
-          <i class="fab fa-instagram me-1 text-danger"></i> @ibasbuffet
-        </a>
-      </div>
-    </div>
-  </div>
+      </main>
 
 
 
-
-  <section class="banner">
-    <div class="banner-content">
-
-      <h1>
-        Experiência gastronômica<br> no conforto da sua casa</h1>
-
-      </p>
-      Iba's Buffet garante serviços de alta qualidade <br> para eventos em casa com seu toque personalizado.
-
-      </p>
-
-      <div class="btn">
-        <a href="paginas/reserva.php?pagina=reserva" class="test">Faça sua reserva de Natal!</a>
-      </div>
-
-    </div>
-
-
-  </section>
-  <br>
-  <br>
-  <hr>
-  <main>
-    <h2>Sobre nós</h2>
-    <div class="texto">
-      <p><strong>No Iba’s Buffet</strong>, acreditamos que experiências gastronômicas marcantes podem — e devem —
-        acontecer no aconchego do
-        seu lar. Nossa proposta vai além de servir pratos refinados: queremos transformar momentos simples em
-        celebrações
-        memoráveis.
-
-        Com um toque de sofisticação e cuidado em cada detalhe, levamos até você a alta gastronomia em um formato
-        intimista, personalizado e acolhedor. Da seleção dos ingredientes ao atendimento dedicado, tudo é pensado para
-        proporcionar uma vivência única, onde o sabor encontra o carinho de um ambiente familiar.
-
-        Cozinhamos com alma, servimos com amor — porque para nós, estar em casa nunca foi tão especial.</p>
-    </div>
-    <br>
-    <hr>
-    <br>
-
-    <section class="produtos">
-      <div class="grid-produtos">
-        <a href="#coquetel" class="produto">
-          <img src="imagens/taboa_de_frios.jpeg" width="140px" alt="coquetel">
-          <h3>Coquetel</h3>
-        </a>
-        <a href="#doce" class="produto">
-          <img src="imagens/prato_sobremesa.jpeg" width="140px" alt="sobremesas">
-          <h3>Doces e sobremesas</h3>
-        </a>
-        <a href="#jantar" class="produto">
-          <img src="imagens/jantar.jpeg" width="140px" alt="jantar">
-          <h3>Jantares</h3>
-        </a>
-        <a href="#arabe" class="produto">
-          <img src="imagens/arabe.jpeg" width="140px" alt="arabe">
-          <h3>Comida Árabe</h3>
-        </a>
-      </div>
-    </section>
-  </main>
-
-
-  <section id="sobre" class="biografia">
-    <div class="bio-box">
-      <div class="bio-grid">
-        <div class="bio-img">
-          <img class="img-perfil" src="imagens/Claudia.jpg" height="auto" alt="claudia viana iba">
+      <div class="position-fixed" style="top: 190px; right: 20px; z-index: 9999; background-color: #a87c5f;">
+        <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header bg-light">
+            <strong class="me-auto">Iba’s Buffet 💛</strong>
+            <small>Agora mesmo</small>
+            <button type="button" class="btn-close " data-bs-dismiss="toast" aria-label="Fechar"></button>
+          </div>
+          <div class="toast-body">
+            Que bom ter você por aqui! ✨<br>
+            Considere nos seguir lá no <strong>Instagram</strong>:<br>
+            <a href="https://www.instagram.com/ibasbuffet" class="text-decoration-none" target="_blank">
+              <i class="fab fa-instagram me-1 text-danger"></i> @ibasbuffet
+            </a>
+          </div>
         </div>
-        <div class="bio-texto">
-          <h2>Claudia viana Iba</h2>
-          <p>
-            Fundadora do Iba’s Buffet, uma mulher guiada por Deus e movida pelo amor à família. Com
-            carinho e dedicação, ela transforma cada evento em um momento de cuidado, sabor e acolhimento. Porque para
-            ela, cozinhar é servir com o coração — e servir é um ato de fé e amor.
+      </div>
+
+
+
+
+      <section class="banner">
+        <div class="banner-content">
+
+          <h1>
+            Experiência gastronômica<br> no conforto da sua casa</h1>
+
+          </p>
+          Iba's Buffet garante serviços de alta qualidade <br> para eventos em casa com seu toque personalizado.
+
           </p>
 
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
+          <div class="btn">
+            <a href="paginas/reserva.php?pagina=reserva" class="test">Faça sua reserva de Natal!</a>
+          </div>
 
-      <p>
-        "Realizando as promessas de Deus". <br>
-        (Hebreus 10:36)
-      </p>
+        </div>
+
+
+      </section>
+      <br>
+      <br>
       <hr>
-      <p>
-        <a href="https://www.facebook.com/share/1AePV4BFf4/?mibextid=wwXIfr" title="Facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/ibasbuffet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          title="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:ibasbuffet@outlook.com?subject=contato pelo site&Olá, gostaria de mais informações."
-          target="_blank">
-          <i class="fas fa-envelope me-1"></i>
-        </a>
-      </p>
-    </div>
-  </footer>
+      <main>
+        <h2>Sobre nós</h2>
+        <div class="texto">
+          <p><strong>No Iba’s Buffet</strong>, acreditamos que experiências gastronômicas marcantes podem — e devem —
+            acontecer no aconchego do
+            seu lar. Nossa proposta vai além de servir pratos refinados: queremos transformar momentos simples em
+            celebrações
+            memoráveis.
+
+            Com um toque de sofisticação e cuidado em cada detalhe, levamos até você a alta gastronomia em um formato
+            intimista, personalizado e acolhedor. Da seleção dos ingredientes ao atendimento dedicado, tudo é pensado
+            para
+            proporcionar uma vivência única, onde o sabor encontra o carinho de um ambiente familiar.
+
+            Cozinhamos com alma, servimos com amor — porque para nós, estar em casa nunca foi tão especial.</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <section class="produtos">
+          <div class="grid-produtos">
+            <a href="#coquetel" class="produto">
+              <img src="imagens/taboa_de_frios.jpeg" width="140px" alt="coquetel">
+              <h3>Coquetel</h3>
+            </a>
+            <a href="#doce" class="produto">
+              <img src="imagens/prato_sobremesa.jpeg" width="140px" alt="sobremesas">
+              <h3>Doces e sobremesas</h3>
+            </a>
+            <a href="#jantar" class="produto">
+              <img src="imagens/jantar.jpeg" width="140px" alt="jantar">
+              <h3>Jantares</h3>
+            </a>
+            <a href="#arabe" class="produto">
+              <img src="imagens/arabe.jpeg" width="140px" alt="arabe">
+              <h3>Comida Árabe</h3>
+            </a>
+          </div>
+        </section>
+      </main>
+
+
+      <section id="sobre" class="biografia">
+        <div class="bio-box">
+          <div class="bio-grid">
+            <div class="bio-img">
+              <img class="img-perfil" src="imagens/Claudia.jpg" height="auto" alt="claudia viana iba">
+            </div>
+            <div class="bio-texto">
+              <h2>Claudia viana Iba</h2>
+              <p>
+                Fundadora do Iba’s Buffet, uma mulher guiada por Deus e movida pelo amor à família. Com
+                carinho e dedicação, ela transforma cada evento em um momento de cuidado, sabor e acolhimento. Porque
+                para
+                ela, cozinhar é servir com o coração — e servir é um ato de fé e amor.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+
+          <p>
+            "Realizando as promessas de Deus". <br>
+            (Hebreus 10:36)
+          </p>
+          <hr>
+          <p>
+            <a href="https://www.facebook.com/share/1AePV4BFf4/?mibextid=wwXIfr" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/ibasbuffet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:ibasbuffet@outlook.com?subject=contato pelo site&Olá, gostaria de mais informações."
+              target="_blank">
+              <i class="fas fa-envelope me-1"></i>
+            </a>
+          </p>
+        </div>
+      </footer>
 
 
 </body>

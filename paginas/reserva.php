@@ -87,11 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <label for="nome" class="form-label">Nome Completo</label>
         <input type="text" name="nome" class="form-control" id="nome" required />
       </div>
-      <div class="col-md-6">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" name="email" class="form-control" id="email" required />
-        <div class="text-danger small" id="emailError"></div>
-      </div>
+     
 
       <div class="col-md-6">
         <label for="telefone" class="form-label">Telefone/Whatsapp</label>
@@ -99,31 +95,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="text-danger small" id="telefoneError"></div>
       </div>
 
-      <div class="col-md-6">
-        <label class="form-label">Tipo de Evento</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="tipo_evento" value="Casamento" id="casamento" />
-          <label class="form-check-label" for="casamento">Casamento</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="tipo_evento" value="Aniversário" id="aniversario" />
-          <label class="form-check-label" for="aniversario">Aniversário</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="tipo_evento" value="Corporativo" id="corporativo" />
-          <label class="form-check-label" for="corporativo">Corporativo</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="tipo_evento" value="cha" id="cha" />
-          <label class="form-check-label" for="cha">Chá de bebê</label>
-        </div>
+     
 
-        <div class="form-check d-flex alien-items-center">
-          <input class="form-check-input me-2" type="checkbox" name="tipo_evento" value="outro" id="outro" />
-          <label class="form-check-label me-2" for="outro">Outro:</label>
-          <input type="text" class="form-control form-control-sm" placeholder="Descreva">
-        </div>
-      </div>
 
       <div class="col-md-6">
         <label class="form-label">Data do Evento</label>
@@ -139,11 +112,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <option value="100 a 200 pessoas">100 a 200</option>
           <option value="200 a 300 pessoas">200 a 300</option>
         </select>
-      </div>
-
-      <div class="col-md-6">
-        <label for="local" class="form-label">Local do Evento (Bairro ou Cidade)</label>
-        <input type="text" name="local" class="form-control" id="local" required />
       </div>
 
 
@@ -200,7 +168,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="rounded-3 shadow-sm overflow-hidden" style="height: 320px;">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.6546923633555!2d-52.37000542487533!3d-24.043239078471778!2m3!1f0!2f0!3f0
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            width= "100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>

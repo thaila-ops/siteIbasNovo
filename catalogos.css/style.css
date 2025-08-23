@@ -59,7 +59,7 @@ header nav {
   
   z-index: 1000;
   background-color: white;
-  display: flex;
+  display: contents;
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 0 4px 10px rgba(80, 60, 2, 0.4);
