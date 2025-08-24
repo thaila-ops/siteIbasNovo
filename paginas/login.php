@@ -29,8 +29,10 @@
     <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      font-family:  "Playfair Display", serif;
+       background-image: url(../imagens/IMG2_0375.jpg);
+         backdrop-filter: blur(4px); /* desfoca o fundo */
+      background-color: rgba(0,0,0,0.3);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -38,7 +40,7 @@
     }
 
     .login-box {
-      background: #fff;
+       background-color: rgba(0, 0, 0, 0.8);
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
@@ -48,7 +50,7 @@
 
     .login-box h2 {
       margin-bottom: 20px;
-      color: #333;
+      color: #826409ff;
     }
 
     .login-box input {
@@ -64,7 +66,7 @@
       width: 100%;
       padding: 12px;
       margin-top: 12px;
-      background: #007bff;
+      background: #a47507ff;
       color: #fff;
       border: none;
       border-radius: 6px;
@@ -75,7 +77,7 @@
     }
 
     .login-box button:hover {
-      background: #0056b3;
+      background: #dbb702ff;
     }
   </style>
 </head>
