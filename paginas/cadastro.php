@@ -33,6 +33,13 @@
 <body class="cadastro-body">
   
   <div class="cadas-box">
+    <h2>Cadastro</h2>
+    <form action="processar_cadastro.php" method="POST">
+      <input type="text" name="nome" placeholder="Digite seu nome" required>
+      <input type="email" name="email" placeholder="Digite seu e-mail" required>
+      <input type="password" name="senha" placeholder="Digite sua senha" required>
+      <button type="submit">Cadastrar</button> 
+      <div class="sm_cnt">Já tem uma conta? <a href="login.php">Faça login</a>
     
   </div>
     </form>
