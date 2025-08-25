@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -79,6 +82,14 @@
     .login-box button:hover {
       background: #dbb702ff;
     }
+
+    .sm_cnt {
+      display: block;
+      margin-top: 15px;
+      color: #ddd;
+      text-decoration: none;
+      font-size: 17px;
+    }
   </style>
 </head>
 <body>
@@ -88,9 +99,11 @@
     <form action="verificar_login.php" method="POST">
       <input type="email" name="email" placeholder="Digite seu e-mail" required>
       <input type="password" name="senha" placeholder="Digite sua senha" required>
-      <button type="submit">Entrar</button>
-    </form>
+      <button type="submit">Entrar</button> 
+      <a href="cadastro.php" class="sm_cnt">Sem conta? Cadastre-se</a>
   </div>
+    </form>
+    
 
 </body>
 </html>
