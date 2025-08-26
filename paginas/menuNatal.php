@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-  <link rel="stylesheet" href="../style2.css/style.css" />
+  <link rel="stylesheet" href="../menu.css/style.css">
   <link href="../imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
@@ -33,14 +33,8 @@
         <img src="../imagens/novo_logo.jpg" width="120px" alt="ibas">
 
         <div class="nav-left">
-          <a href="../index.php?pagina=home">Home</a>
+         <a href="../index.php?pagina=home">Home</a>
           <a href="contato.php?pagina=contato">Contato</a>
-        </div>
-
-
-
-
-        <div class="nav-right">
           <a href="../index.php#sobre">Sobre</a>
           <a href="catalogo.php?pagina=catalogo">Catálogo</a>
         </div>

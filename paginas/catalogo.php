@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-  <link rel="stylesheet" href="../style.css/style.css"/>
+  <link rel="stylesheet" href="../catalogo.css/style.css" />
   <link href="../imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
@@ -30,14 +30,11 @@
     <div class="container">
       <nav>
 
-          <img src="../imagens/novo_logo.jpg" width="120px" alt="ibas">
+        <img src="../imagens/novo_logo.jpg" width="120px" alt="ibas" class="header-logo">
 
         <div class="nav-left">
           <a href="../index.php?pagina=home">Home</a>
           <a href="contato.php?pagina=contato">Contato</a>
-        </div>
-
-        <div class="nav-right">
           <a href="../index.php#sobre">Sobre</a>
           <a href="catalogo.php?pagina=catalogo">Catálogo</a>
         </div>
@@ -57,7 +54,7 @@
     </p>
   </div>
 
-  <div class="container-filter text-center my-4">
+  <div class="pagination container-filter text-center my-4">
     <button class="filter-btn active" data-filter="all">Todos</button>
     <button class="filter-btn" data-filter="coquetel">Coquetel</button>
     <button class="filter-btn" data-filter="doce">Doces</button>
@@ -379,14 +376,13 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-  crossorigin="anonymous"></script>
+  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     const filterBtns = document.querySelectorAll('.filter-btn');
 
     filterBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
+      btn.addEventListener('click', function () {
         // Remove active class from all buttons
         filterBtns.forEach(btn => btn.classList.remove('active'));
 

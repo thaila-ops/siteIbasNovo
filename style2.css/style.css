@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   
+  
 }
 
 .whatsapp-float {
@@ -246,7 +247,7 @@ hr {
 }
 
 .bio-grid {
-  display: contents;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   align-items: center;
@@ -313,7 +314,9 @@ a:hover {
 
 /*contato*/
 main {
+  width: 100%;
   margin: 0;
+  padding:0;
   color: #4a4a4a;
 }
 

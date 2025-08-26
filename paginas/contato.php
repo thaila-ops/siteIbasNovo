@@ -56,9 +56,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="nav-left">
           <a href="../index.php?pagina=home">Home</a>
           <a href="contato.php?pagina=contato">Contato</a>
-        </div>
-
-        <div class="nav-right">
           <a href="../index.php#sobre">Sobre</a>
           <a href="catalogo.php?pagina=catalogo">Catálogo</a>
         </div>
