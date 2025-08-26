@@ -40,7 +40,7 @@ if(isset($_POST['submit']))
     integrity="sha512-yHfM4D5xYcHc8MIhBhHtL9BRDOoN0uRM3kskmvwlLoAhDQ/IuCB6v0IZI1iUvXkYOiMd9Rvi9BkD+fS2gk0PRA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="../style2.css/cds-lgn.css">
+  <link rel="stylesheet" href="../cadastro.css/style.css">
   <link href="../imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
