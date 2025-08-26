@@ -1,4 +1,22 @@
 <?php
+if(isset($_POST['submit'])) 
+{
+//  print_r($_POST['nome']);
+//   print_r($_POST['email']);
+//   print_r($_POST['senha']);
+
+  include_once('../bancodedados/bnc-dd.php');
+
+  $nome= $_POST['nome'];
+  $email= $_POST['email'];
+  $senha= $_POST['senha'];
+
+  $result= mysqli_query($conn, "INSERT INTO usuarios(nome, email, senha) VALUES ('$nome', '$email', '$senha')");
+
+  header('Location: login.php');
+
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +40,7 @@
     integrity="sha512-yHfM4D5xYcHc8MIhBhHtL9BRDOoN0uRM3kskmvwlLoAhDQ/IuCB6v0IZI1iUvXkYOiMd9Rvi9BkD+fS2gk0PRA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="../cadastro.css/style.css">
+  <link rel="stylesheet" href="../style2.css/cds-lgn.css">
   <link href="../imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
@@ -30,15 +48,15 @@
 
 <body>
 </head>
-<body>
+<body class="cadastro-body">
   
   <div class="cadas-box">
     <h2>Cadastro</h2>
-    <form action="processar_cadastro.php" method="POST">
+    <form action="cadastro.php" method="POST">
       <input type="text" name="nome" placeholder="Digite seu nome" required>
       <input type="email" name="email" placeholder="Digite seu e-mail" required>
       <input type="password" name="senha" placeholder="Digite sua senha" required>
-      <button type="submit">Cadastrar</button> 
+      <button type="submit" name="submit">Cadastrar</button> 
       <div class="sm_cnt">Já tem uma conta? <a href="login.php">Faça login</a>
     
   </div>

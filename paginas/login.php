@@ -37,10 +37,10 @@
   
   <div class="login-box">
     <h2>Login</h2>
-    <form action="verificar_login.php" method="POST">
+    <form action="../bancodedados/credentials.php" method="POST">
       <input type="email" name="email" placeholder="Digite seu e-mail" required>
       <input type="password" name="senha" placeholder="Digite sua senha" required>
-      <button type="submit">Entrar</button> 
+      <input class="submitbutton" type="submit" name="submit" value="Entrar">
       <a href="cadastro.php" class="sm_cnt">Sem conta? Cadastre-se</a>
   </div>
     </form>
