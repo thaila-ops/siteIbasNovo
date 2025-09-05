@@ -1,26 +1,12 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $nome = $_POST['nome'] ?? '';
-  $telefone = $_POST['telefone'] ?? '';
-  $email = $_POST['email'] ?? '';
-  $qtdpessoas = $_POST['qtdpessoas'] ?? '';
-  $local = $_POST['local'] ?? '';
-  $tipo_evento = $_POST['tipo_evento'] ?? '';
-  $mensagem = $_POST['mensagem'] ?? '';
-
-  $conteudo = "==== NOVO ORÇAMENTO ====\n";
-  $conteudo .= "Nome: $nome\n";
-  $conteudo .= "Telefone: $telefone\n";
-  $conteudo .= "Email: $email\n";
-  $conteudo .= "Convidados: $qtdpessoas\n";
-  $conteudo .= "Local: $local\n";
-  $conteudo .= "Tipo de Evento: $tipo_evento\n";
-  $conteudo .= "Mensagem: $mensagem\n";
-  $conteudo .= "-------------------------\n";
-
-  file_put_contents("orcamentos.txt", $conteudo, FILE_APPEND);
-
-  echo "<script>alert('Orçamento enviado com sucesso!');</script>";
+use App\Model\User;
+require_once __DIR__ . '/../vendor/autoload.php';
+if ($_POST) {
+    $user = new User(
+        name: $_POST['user_name'],
+        email: $_POST['user_email'],
+    );
+    $user->save();
 }
 ?>
 
@@ -81,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h3 class="mt-5">Entre em contato conosco</h3>
 
 
-    <form class="row g-3" action="enviar.php" method="POST">
+    <form class="row g-3"  method="POST">
 
       <div class="col-md-6">
         <label for="nome" class="form-label">Nome Completo</label>
