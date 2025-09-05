@@ -40,7 +40,7 @@
 
         <div class="nav-left">
           <a href="index.php?pagina=home">Home</a>
-          <a href="paginas/contato.php?pagina=contato">Contato</a>
+          <a href="paginas/reserva.php?pagina=reserva">Reserva</a>
           <a href="paginas/menuNatal.php?pagina=menuNatal">Menu de Natal</a>
           <a href="paginas/catalogo.php?pagina=catalogo">Catálogo</a>
           <a href="paginas/login.php?pagina=login" class="login">

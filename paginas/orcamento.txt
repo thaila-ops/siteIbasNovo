@@ -1,8 +1,0 @@
-nome: 
-Telefone: 
-Email: 
-qtdpessoas: 
-qtdpessoas 
-local 
-tipoEvento: 
-comentario 
