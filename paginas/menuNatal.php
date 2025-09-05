@@ -34,7 +34,7 @@
 
         <div class="nav-left">
          <a href="../index.php?pagina=home">Home</a>
-          <a href="contato.php?pagina=contato">Contato</a>
+         <a href="reserva.php?pagina=reserva">Reserva</a>
           <a href="../index.php#sobre">Sobre</a>
           <a href="catalogo.php?pagina=catalogo">Catálogo</a>
         </div>
