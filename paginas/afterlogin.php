@@ -25,10 +25,23 @@
         }
 
         body {
-            background-image: url(../imagens/IMG2_0375.jpg);
+
+
             color: var(--text);
             line-height: 1.6;
             padding: 20px;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../imagens/IMG2_0375.jpg) no-repeat center center / cover;
+            filter: blur(5px);
+            z-index: -1;
         }
 
         .container {
@@ -247,18 +260,11 @@
             color: #2e7d32;
         }
 
-        .footer {
-  background-color: white;
-  color: var(--dark);
-  padding: 60px 0 40px;
-  text-align: center;
-  margin-top: 80px;
-}
 
         .pagination {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin: 20px;
             gap: 8px;
         }
 
@@ -398,7 +404,7 @@
                     <th>Tipo de Evento</th>
                     <th>Convidados</th>
                     <th>Status</th>
-                    <th>Ações</th>
+
                 </tr>
             </thead>
             <tbody>
@@ -417,7 +423,7 @@
                 }
 
 
-                $sql = "SELECT id, nome, telefone, email, data_evento, hora_evento, tipo_evento, num_convidados, criado_em FROM reserva ORDER BY criado_em DESC";
+                $sql = "SELECT id, nome, telefone, email, data_evento, hora_evento, tipo_evento, num_convidados, criado_em FROM reserva ORDER BY criado_em ASC";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
@@ -436,10 +442,18 @@
                         echo "<td>" . $row["hora_evento"] . "</td>";
                         echo "<td>" . $row["tipo_evento"] . "</td>";
                         echo "<td>" . $row["num_convidados"] . "</td>";
-                       
+
+                        echo "<td>";
+                        echo "  <select name='status[" . $row["id"] . "]' class='form-select form-select-sm'>";
+                        echo "      <option value='pendente' " . ($row["status"] == 'pendente' ? 'selected' : '') . ">Pendente</option>";
+                        echo "      <option value='confirmado' " . ($row["status"] == 'confirmado' ? 'selected' : '') . ">Confirmado</option>";
+                        echo "  </select>";
+                        echo "</td>";
+                        
+
                         echo "<td class='action-cell'>";
 
-                       
+
                         echo "</td>";
                         echo "</tr>";
                     }
@@ -460,13 +474,10 @@
             <div class="pagination-btn">10</div>
         </div>
     </div>
-
-    <div class="footer">
-        <p>Iba's Buffet &copy; 2023 - Todos os direitos reservados</p>
-    </div>
-    </div>
-
    
+    </div>
+
+
 </body>
 
 </html>
