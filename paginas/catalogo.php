@@ -41,6 +41,22 @@
       </nav>
     </div>
   </header>
+  <div class="position-fixed" style="top: 190px; right: 20px; z-index: 9999; background-color: #a87c5f;">
+        <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header bg-light">
+            <strong class="me-auto">Iba’s Buffet 💛</strong>
+            <small>Agora mesmo</small>
+            <button type="button" class="btn-close " data-bs-dismiss="toast" aria-label="Fechar"></button>
+          </div>
+          <div class="toast-body">
+            Que bom ter você por aqui! ✨<br>
+            Considere nos seguir lá no <strong>Instagram</strong>:<br>
+            <a href="https://www.instagram.com/ibasbuffet" class="text-decoration-none" target="_blank">
+              <i class="fab fa-instagram me-1 text-danger"></i> @ibasbuffet
+            </a>
+          </div>
+        </div>
+      </div>
 
   <div class="text-center my-5" style="margin-top: 5rem !important;">
     <h1 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">
@@ -378,6 +394,15 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 <script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var toastEl = document.getElementById('liveToast');
+    var toast = new bootstrap.Toast(toastEl, {
+      delay: 100000
+    });
+    toast.show();
+  });
+</script>
   document.addEventListener('DOMContentLoaded', function () {
     const filterBtns = document.querySelectorAll('.filter-btn');
 

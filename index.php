@@ -64,25 +64,91 @@
       </main>
 
       <style>
-  /* Fundo desfocado */
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0,0,0,0.3);
-    z-index: 1040; /* acima do conteúdo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* fundo escuro */
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; 
+}
+
+
+.toast {
+  width: 350px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Cabeçalho do toast */
+.toast-header {
+  background: #a68a64; 
+  color: white;
+  font-weight: bold;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 12px 16px;
+}
+
+/* Botão de fechar */
+.toast-header .btn-close {
+  filter: invert(1); 
+}
+
+
+.toast-body {
+  padding: 20px;
+  font-size: 15px;
+}
+
+
+.toast-body .form-control {
+  border-radius: 10px;
+  border: 1px solid  #b59151ff;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.toast-body .form-control:focus {
+  border-color: #a68a64;
+  box-shadow: 0 0 8px rgba(75, 57, 1, 0.25);
+}
+
+
+.toast-body .btn {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+  .btn{
+    background-color: #a68a64;
+    color: white;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
   }
 
-  .toast {
-    z-index: 1050; /* acima do overlay */
-    min-width: 350px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
   }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+
+  
+
 </style>
 </head>
 <body>
@@ -91,7 +157,7 @@
    <div class="overlay" id="overlay">
     <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
       <div class="toast-header">
-        <strong class="me-auto">Formulário</strong>
+        <strong class="me-auto">Fale um pouco sobre você</strong>
 <button type="button" class="btn-close" id="closeToast" aria-label="Fechar"></button>
 
       </div>
@@ -105,31 +171,11 @@
             <label for="email" class="form-label">E-mail</label>
             <input type="email" class="form-control" id="email" name="email" required>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn">Enviar</button>
         </form>
       </div>
     </div>
   </div>
-
-
-
-      <div class="position-fixed" style="top: 190px; right: 20px; z-index: 9999; background-color: #a87c5f;">
-        <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-header bg-light">
-            <strong class="me-auto">Iba’s Buffet 💛</strong>
-            <small>Agora mesmo</small>
-            <button type="button" class="btn-close " data-bs-dismiss="toast" aria-label="Fechar"></button>
-          </div>
-          <div class="toast-body">
-            Que bom ter você por aqui! ✨<br>
-            Considere nos seguir lá no <strong>Instagram</strong>:<br>
-            <a href="https://www.instagram.com/ibasbuffet" class="text-decoration-none" target="_blank">
-              <i class="fab fa-instagram me-1 text-danger"></i> @ibasbuffet
-            </a>
-          </div>
-        </div>
-      </div>
-
 
 
 
@@ -145,7 +191,7 @@
           </p>
 
           <div class="btn">
-            <a href="paginas/reserva.php?pagina=reserva" class="test">Faça sua reserva de Natal!</a>
+            <a href="paginas/reserva.php?pagina=reserva">Faça sua reserva</a>
           </div>
 
         </div>
@@ -243,15 +289,6 @@
 
 
 </body>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var toastEl = document.getElementById('liveToast');
-    var toast = new bootstrap.Toast(toastEl, {
-      delay: 100000
-    });
-    toast.show();
-  });
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 <script>
