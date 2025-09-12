@@ -23,7 +23,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (preg_match('/(\d+)/', $qtdpessoas, $matches)) {
         $num_convidados = (int)$matches[1];
     }
-    
+     $sqlCheck = "SELECT COUNT(*) as total FROM reserva WHERE data_evento = ? AND hora_evento = ?";
+    $stmtCheck = $conn->prepare($sqlCheck);
+    $stmtCheck->bind_param("ss", $data_evento, $hora_evento);
+    $stmtCheck->execute();
+    $result = $stmtCheck->get_result();
+    $row = $result->fetch_assoc();
+
+    if ($row['total'] > 0) {
+        // Já existe uma reserva
+        $error_message = 'A data e hora escolhidas já estão reservadas. Por favor, selecione outra.';
+        $alert_class = 'alert-danger';
+    }
     // Preparar e executar a query SQL
     // NOTA: Removi completamente a coluna 'observacoes' que não existe
     $sql = "INSERT INTO reserva (nome, telefone, email, data_evento, hora_evento, tipo_evento, num_convidados) 

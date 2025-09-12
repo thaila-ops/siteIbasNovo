@@ -63,6 +63,54 @@
 
       </main>
 
+      <style>
+  /* Fundo desfocado */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1040; /* acima do conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toast {
+    z-index: 1050; /* acima do overlay */
+    min-width: 350px;
+  }
+</style>
+</head>
+<body>
+
+
+   <div class="overlay" id="overlay">
+    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-header">
+        <strong class="me-auto">Formulário</strong>
+<button type="button" class="btn-close" id="closeToast" aria-label="Fechar"></button>
+
+      </div>
+      <div class="toast-body">
+        <form action="" method="POST">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
 
 
       <div class="position-fixed" style="top: 190px; right: 20px; z-index: 9999; background-color: #a87c5f;">
@@ -204,13 +252,25 @@
     toast.show();
   });
 </script>
-<script>
-  function mostrarMenu() {
-    //document.querySelector(".header-menu")
-    $(".nav-left").toggle();
-  }
-</script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const overlay = document.getElementById('overlay');
+  const openBtn = document.getElementById('openToast');
+  const closeBtn = document.getElementById('closeToast');
+
+  closeBtn.addEventListener('click', () => {
+  overlay.style.display = 'none'; 
+});
+
+  openBtn.addEventListener('click', () => {
+    overlay.classList.remove('d-none');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    overlay.classList.add('d-none');
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
