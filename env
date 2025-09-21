@@ -1,0 +1,18 @@
+# Configuração do Banco de Dados
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=ibas_buffet_db
+DB_USERNAME=root
+DB_PASSWORD=
+
+# Configuração da Aplicação
+APP_URL=http://localhost:8000
+
+# Configuração de E-mail (SMTP)
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=465
+MAIL_USERNAME=seu-email@gmail.com
+MAIL_PASSWORD=sua-senha-de-app-aqui
+MAIL_ENCRYPTION=ssl
+MAIL_FROM_ADDRESS=seu-email@gmail.com
+MAIL_FROM_NAME="Iba's Buffet"
