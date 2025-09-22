@@ -45,7 +45,7 @@
             display: inline-flex; align-items: center; font-weight: 500; transition: all 0.3s;
             text-decoration: none;
         }
-        .btn-secondary { background-color: var(--light); color: var(--text); border: 1px solid #ddd; }
+        .btn-secondary { background-color: #6c757d; color: white; }
         .btn-danger { background-color: #c62828; color: white; }
         .btn i { margin-right: 8px; }
         .btn:hover { opacity: 0.9; transform: translateY(-2px); }
@@ -54,7 +54,25 @@
         table th, table td { padding: 15px; text-align: left; border-bottom: 1px solid #eaeaea; }
         table th { background-color: #f8f9fa; color: var(--primary); font-weight: 600; }
         table tr:hover { background-color: #f9f9f9; }
-        .action-cell form { margin: 0; }
+
+        /* ESTILOS ADICIONADOS PARA A NOVA CÉLULA DE AÇÕES */
+        .action-cell {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .action-cell form {
+            margin: 0;
+        }
+        .status-select {
+            padding: 5px 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .btn-sm { /* Botão menor para salvar status e excluir */
+            padding: 5px 10px;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
@@ -92,6 +110,7 @@
                             <th>Evento</th>
                             <th>Data</th>
                             <th>Convidados</th>
+                            <th>Status</th>
                             <th>Ações</th>
                         </tr>
                     </thead>
@@ -104,7 +123,20 @@
                                 <td><?= htmlspecialchars($reserva['tipo_evento']); ?></td>
                                 <td><?= $reserva['data_formatada']; ?> às <?= htmlspecialchars(substr($reserva['hora_evento'], 0, 5)); ?></td>
                                 <td><?= htmlspecialchars($reserva['num_convidados']); ?></td>
+                                
+                                <td><?= htmlspecialchars($reserva['status']); ?></td>
+                                
                                 <td class="action-cell">
+                                    <form action="/reserva/update-status" method="POST">
+                                        <input type="hidden" name="id" value="<?= $reserva['id']; ?>">
+                                        <select name="status" class="status-select">
+                                            <option value="Pendente" <?= $reserva['status'] === 'Pendente' ? 'selected' : '' ?>>Pendente</option>
+                                            <option value="Confirmada" <?= $reserva['status'] === 'Confirmada' ? 'selected' : '' ?>>Confirmada</option>
+                                            <option value="Cancelada" <?= $reserva['status'] === 'Cancelada' ? 'selected' : '' ?>>Cancelada</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-sm btn-secondary">Salvar</button>
+                                    </form>
+
                                     <form action="/reserva/delete" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir esta reserva?');">
                                         <input type="hidden" name="id" value="<?= $reserva['id']; ?>">
                                         <button type="submit" class="btn btn-sm btn-danger">Excluir</button>

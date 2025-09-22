@@ -30,6 +30,7 @@
                 <li><a href="/reserva">Reserva</a></li>
                 <li><a href="/menu-natal">Menu de Natal</a></li>
                 <li><a href="/catalogo">Catálogo</a></li>
+                <li><a href="/consultar-reservas">Consultar Reserva</a></li>
                 <li><a href="/login"><i class="fas fa-user-circle"></i> Login</a></li>
             </ul>
         </nav>

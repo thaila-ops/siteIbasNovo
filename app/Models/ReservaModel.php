@@ -37,29 +37,70 @@ class ReservaModel
     }
 
     /**
- * Busca todas as reservas, ordenando pelas mais recentes.
- * Retorna um array com todas as reservas.
- */
-public function findAll(): array
-{
+     * Busca todas as reservas, ordenando pelas mais recentes.
+     * Retorna um array com todas as reservas.
+     */
+    public function findAll(): array
+    {
+        $stmt = $this->conn->query(
+            "SELECT *, DATE_FORMAT(data_evento, '%d/%m/%Y') as data_formatada 
+             FROM reservas 
+             ORDER BY criado_em DESC"
+        );
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 
+    /**
+     * Exclui uma reserva do banco de dados pelo seu ID.
+     */
+    public function deleteById(int $id): bool
+    {
+        $stmt = $this->conn->prepare("DELETE FROM reservas WHERE id = :id");
+        $stmt->bindParam(':id', $id);
+        return $stmt->execute();
+    }
     
-    $stmt = $this->conn->query(
-        "SELECT *, DATE_FORMAT(data_evento, '%d/%m/%Y') as data_formatada 
-         FROM reservas 
-         ORDER BY criado_em DESC"
-    );
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
-}
+    /**
+     * Busca todas as reservas associadas a um e-mail.
+     * @param string $email O e-mail do cliente a ser buscado.
+     * @return array Retorna um array com as reservas encontradas.
+     */
+    public function buscarPorEmail(string $email): array
+    {
+        // Note que usei a coluna `email` conforme seu método save().
+        $query = "SELECT *, DATE_FORMAT(data_evento, '%d/%m/%Y') as data_formatada
+                  FROM reservas 
+                  WHERE email = :email 
+                  ORDER BY data_evento DESC";
 
-/**
- * Exclui uma reserva do banco de dados pelo seu ID.
- */
-public function deleteById(int $id): bool
-{
-    $stmt = $this->conn->prepare("DELETE FROM reservas WHERE id = :id");
-    $stmt->bindParam(':id', $id);
-    return $stmt->execute();
-}
+        // Prepara a consulta de forma segura para evitar SQL Injection
+        $stmt = $this->conn->prepare($query);
 
+        // Associa o valor do e-mail ao parâmetro :email na query
+        $stmt->bindValue(':email', $email);
+
+        // Executa a query
+        $stmt->execute();
+
+        // Retorna todas as linhas encontradas como um array associativo
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    /**
+     * Atualiza o status de uma reserva específica.
+     * @param int $id O ID da reserva a ser atualizada.
+     * @param string $status O novo status ('Pendente', 'Confirmada', 'Cancelada').
+     * @return bool Retorna true em caso de sucesso, false em caso de falha.
+     */
+    public function updateStatus(int $id, string $status): bool
+    {
+        $sql = "UPDATE reservas SET status = :status WHERE id = :id";
+        
+        $stmt = $this->conn->prepare($sql);
+        
+        $stmt->bindValue(':status', $status);
+        $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+        
+        return $stmt->execute();
+    }
 }

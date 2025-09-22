@@ -98,9 +98,48 @@ class ReservaController extends Controller
             
             $mail->send();
         } catch (Exception $e) {
-            // Se o e-mail falhar, não quebramos a aplicação.
-            // A reserva já foi salva. Podemos registrar o erro para análise posterior.
             error_log("Erro no envio do e-mail: {$mail->ErrorInfo}");
         }
+    }
+
+    // ==================================================================
+    // == NOVOS MÉTODOS PARA CONSULTA ADICIONADOS AQUI ==
+    // ==================================================================
+
+    /**
+     * Exibe o formulário para o cliente consultar suas reservas.
+     */
+    public function mostrarFormularioConsulta(): void
+    {
+        // Usa o seu método `view` para renderizar o formulário
+        $this->view('reserva/consulta_form', [
+            'titulo' => 'Consultar Minhas Reservas'
+        ]);
+    }
+
+    /**
+     * Processa a busca por e-mail e exibe os resultados.
+     */
+    public function consultarPorEmail(): void
+    {
+        $email = $_POST['email'] ?? null;
+
+        // Validação do e-mail
+        if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $_SESSION['error_message'] = 'Por favor, insira um e-mail válido.';
+            header('Location: /consultar-reservas'); // Redireciona de volta para o formulário
+            exit;
+        }
+
+        $reservaModel = new ReservaModel();
+        $reservas = $reservaModel->buscarPorEmail($email);
+
+        // Usa o seu método `view` para renderizar a página de resultados,
+        // passando os dados encontrados para a view.
+        $this->view('reserva/consulta_resultados', [
+            'titulo' => 'Resultados da Consulta',
+            'reservas' => $reservas,
+            'email' => $email
+        ]);
     }
 }
