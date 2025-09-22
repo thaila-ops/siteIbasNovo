@@ -348,3 +348,63 @@ body.login-page {
     gap: 15px;
   }
 }
+
+/* --- Estilos para as Páginas de Consulta --- */
+.consulta-container {
+    max-width: 800px;      /* Define uma largura máxima para o conteúdo */
+    margin: 40px auto;     /* Centraliza o container na página (mágica acontece aqui) */
+    padding: 30px;         /* Adiciona um espaçamento interno */
+    background-color: #ffffff; /* Um fundo branco para destacar */
+    box-shadow: var(--shadow); /* Usa a sombra que você já definiu */
+    border-radius: 12px;   /* Cantos arredondados */
+    text-align: center;    /* Centraliza o texto (H1, p) dentro do container */
+}
+
+.consulta-container form {
+    max-width: 500px;      /* Deixa o formulário um pouco mais estreito */
+    margin: 20px auto;     /* Centraliza o formulário dentro do container */
+    text-align: left;      /* Alinha o texto do formulário (labels) à esquerda */
+}
+
+.consulta-container form input,
+.consulta-container form button {
+    width: 100%;           /* Faz o input e o botão ocuparem 100% da largura do form */
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.consulta-container form button {
+    background-color: var(--primary); /* Usa sua cor primária */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.consulta-container form button:hover {
+    background-color: var(--accent); /* Usa sua cor de destaque no hover */
+}
+
+/* --- Estilos para a Tabela de Resultados --- */
+.consulta-container table {
+    width: 100%;                  /* Tabela ocupa toda a largura do container */
+    margin-top: 20px;             /* Espaço acima da tabela */
+    border-collapse: collapse;    /* Remove espaço entre as células */
+    text-align: left;             /* Alinha texto da tabela à esquerda */
+}
+
+.consulta-container th,
+.consulta-container td {
+    padding: 12px;                /* Espaçamento interno das células */
+    border-bottom: 1px solid #ddd;/* Linha separando as linhas */
+}
+
+.consulta-container th {
+    background-color: #f2f2f2;    /* Fundo cinza claro para o cabeçalho */
+    font-weight: bold;
+}
+
+.consulta-container tr:hover {
+    background-color: #f9f9f9;    /* Muda a cor da linha ao passar o mouse */
+}
