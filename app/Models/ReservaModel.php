@@ -103,4 +103,26 @@ class ReservaModel
         
         return $stmt->execute();
     }
+
+/**
+     * Verifica se uma data de evento já está reservada e não foi cancelada.
+     * @param string $data_evento A data no formato YYYY-MM-DD.
+     * @return bool Retorna true se a data estiver ocupada, false caso contrário.
+     */
+    public function dataJaReservada(string $data_evento): bool
+    {
+        // A query conta quantas reservas existem para a data que NÃO ESTEJAM canceladas.
+        $sql = "SELECT COUNT(*) FROM reservas WHERE data_evento = :data_evento AND status != 'Cancelada'";
+        
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindValue(':data_evento', $data_evento);
+        $stmt->execute();
+        
+        // fetchColumn() retorna o valor da primeira coluna da primeira linha (o nosso COUNT(*))
+        $count = $stmt->fetchColumn();
+        
+        // Se a contagem for maior que 0, a data está ocupada.
+        return $count > 0;
+    }
+
 }

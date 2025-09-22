@@ -34,15 +34,23 @@ class ReservaController extends Controller
             'num_convidados' => $_POST['num_convidados'] ?? 0,
         ];
 
-        if (in_array('', $data)) {
+        if (in_array('', $data, true)) {
             $_SESSION['error_message'] = 'Todos os campos são obrigatórios.';
             header('Location: /reserva');
             exit;
         }
 
         $reservaModel = new ReservaModel();
+
+        // Verificação para ver se a data já está reservada
+        if ($reservaModel->dataJaReservada($data['data_evento'])) {
+            $_SESSION['error_message'] = 'Desculpe, esta data já está reservada. Por favor, escolha outra.';
+            header('Location: /reserva');
+            exit;
+        }
+
+        // Se a data está livre, tenta salvar a reserva
         if ($reservaModel->save($data)) {
-            // Se a reserva foi salva, tente enviar o e-mail.
             $this->enviarEmailConfirmacao($data);
             
             $_SESSION['success_message'] = 'Sua solicitação de reserva foi enviada com sucesso! Um e-mail de confirmação foi enviado para você.';
@@ -102,16 +110,11 @@ class ReservaController extends Controller
         }
     }
 
-    // ==================================================================
-    // == NOVOS MÉTODOS PARA CONSULTA ADICIONADOS AQUI ==
-    // ==================================================================
-
     /**
      * Exibe o formulário para o cliente consultar suas reservas.
      */
     public function mostrarFormularioConsulta(): void
     {
-        // Usa o seu método `view` para renderizar o formulário
         $this->view('reserva/consulta_form', [
             'titulo' => 'Consultar Minhas Reservas'
         ]);
@@ -124,18 +127,15 @@ class ReservaController extends Controller
     {
         $email = $_POST['email'] ?? null;
 
-        // Validação do e-mail
         if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $_SESSION['error_message'] = 'Por favor, insira um e-mail válido.';
-            header('Location: /consultar-reservas'); // Redireciona de volta para o formulário
+            header('Location: /consultar-reservas');
             exit;
         }
 
         $reservaModel = new ReservaModel();
         $reservas = $reservaModel->buscarPorEmail($email);
 
-        // Usa o seu método `view` para renderizar a página de resultados,
-        // passando os dados encontrados para a view.
         $this->view('reserva/consulta_resultados', [
             'titulo' => 'Resultados da Consulta',
             'reservas' => $reservas,
